@@ -7,20 +7,20 @@ let paths = window.location.pathname.split('/')
 { 
   const link = document.createElement('link'); 
   link.rel = 'stylesheet'; 
-  link.href = 'https://slater.app/16118/43384.css?v=861099'; 
+  link.href = 'css/43384.css'; 
   document.head.appendChild(link); 
 } 
  
 
 // loader -> 
-import('https://slater.app/16118/43416.js?v=405322')
+import('./43416.js')
 
 
 // vtec -> 
-import('https://slater.app/16118/43300.js?v=60467')
+import('./43300.js')
 
 
 // parallax -> 
-import('https://slater.app/16118/43480.js?v=589073')
+import('./43480.js')
 
 

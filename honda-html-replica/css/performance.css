@@ -1,0 +1,27 @@
+/* GPU Acceleration for Smooth Animations */
+.home_hero_title-split, 
+.artistry_img-wrap,
+.loader-item,
+.loader-gauge-anim,
+.brief-item,
+.mile-item,
+.analog-item,
+.blueprint-item,
+.legacy-item,
+.footer-item {
+  will-change: transform, opacity;
+}
+
+/* Optimize for smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hardware acceleration for animated elements */
+.loader,
+.loader-gauge,
+.nav,
+.home-hero {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
