@@ -262,7 +262,7 @@ function nav() {
   });
 
 }
-// nav()
+nav()
 
 // home animation 
 function home() {
@@ -410,7 +410,7 @@ function home() {
     }
   });
 }
-// home()
+home()
 
 // heading anim
 
@@ -1135,7 +1135,7 @@ function lenis() {
 lenis()
 
 function initScripts() {
-  loader();
+  // loader(); // Removed - using 43416.js loader instead
   nav();
   gauge();
   heading();
