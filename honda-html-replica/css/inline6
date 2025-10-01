@@ -1,0 +1,30 @@
+
+.formula::before {
+  content: "";
+  display: table;
+  margin-bottom: calc(-0.4lh + 0.5em);
+}
+
+.formula::after {
+  content: "";
+  display: table;
+  margin-bottom: calc(-0.4lh + 0.3em);
+}
+
+.progress-dial, .dial-no {
+  transform-box: fill-box;
+  transform-origin: center bottom;
+}
+
+.progress-nav__indicator {
+  transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+span.spacer {
+width: 10%;
+display: inline-block
+}
+
+.big-para {
+font-size: var(--big-para)
+}
