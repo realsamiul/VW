@@ -1,0 +1,25 @@
+{
+  "name": "honda-s2000-replica",
+  "version": "1.0.0",
+  "description": "A tribute to the engineering, design, and culture of Honda's iconic S2000 roadster",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": [
+    "honda",
+    "s2000",
+    "car",
+    "website",
+    "replica",
+    "gsap",
+    "animations"
+  ],
+  "author": "Honda S2000 Tribute",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/honda-s2000-replica"
+  }
+}

@@ -1,105 +1,74 @@
 # Honda S2000 Website Replica
 
-A faithful recreation of the Honda S2000 website featuring advanced animations, smooth scrolling, and interactive elements built with GSAP (GreenSock Animation Platform).
+A tribute to the engineering, design, and culture of Honda's iconic S2000 roadster. This website celebrates the timeless appeal of a car that continues to inspire enthusiasts worldwide.
 
-## Description
+## Features
 
-This project recreates the Honda S2000 website with all its original animations and interactions. The site features:
+- **Smooth Animations**: GSAP-powered animations with ScrollTrigger
+- **Interactive Loader**: Counter animation with gauge bars
+- **Parallax Effects**: Scroll-triggered parallax animations
+- **Smooth Scrolling**: Lenis-powered smooth scrolling
+- **Responsive Design**: Mobile and desktop optimized
+- **Performance Optimized**: GPU acceleration and asset preloading
 
-- **Advanced Loader Animation**: Custom gauge animation with progress counter
-- **Smooth Scrolling**: Powered by Lenis for buttery-smooth scroll experience
-- **Parallax Effects**: Multi-directional parallax scrolling for depth
-- **Interactive Elements**: Hover effects, scroll-triggered animations, and transitions
-- **Responsive Design**: Optimized for desktop and mobile devices
-- **GSAP Animations**: Professional-grade animations using GreenSock Animation Platform
+## Technologies Used
 
-## How to Run
-
-### Option 1: Python HTTP Server (Recommended)
-```bash
-# Navigate to the project directory
-cd honda-html-replica
-
-# Start a local server
-python -m http.server 8000
-
-# Open your browser and visit:
-# http://localhost:8000
-```
-
-### Option 2: Using main.py (if available)
-```bash
-# If you have a main.py script in the project root
-python main.py
-```
-
-### Option 3: Live Server (VS Code Extension)
-1. Install the "Live Server" extension in VS Code
-2. Right-click on `index.html`
-3. Select "Open with Live Server"
-
-## How to Test
-
-### Option 1: Using test_main.py (if available)
-```bash
-# If you have a test_main.py script in the project root
-python test_main.py
-```
-
-### Option 2: Manual Testing
-1. **Loader Animation**: Refresh the page to see the gauge loader animation
-2. **Smooth Scrolling**: Scroll through the page to test Lenis smooth scrolling
-3. **Parallax Effects**: Look for elements with `data-scroll-speed` attributes moving at different speeds
-4. **Scroll Triggers**: Scroll to different sections to trigger various animations
-5. **Interactive Elements**: Hover over buttons and interactive elements
-6. **Console Testing**: Open browser dev tools and check for any JavaScript errors
-
-### Browser Compatibility
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
-
-### Performance Testing
-- Test on different screen sizes (desktop, tablet, mobile)
-- Check animation performance in browser dev tools
-- Verify smooth 60fps animations
-
-## Technical Stack
-
-- **HTML5**: Semantic markup structure
-- **CSS3**: Styling and responsive design
-- **JavaScript**: Interactive functionality
-- **GSAP**: Animation library with plugins:
-  - ScrollTrigger
-  - SplitText
-  - CustomEase
-  - ScrambleTextPlugin
-- **Lenis**: Smooth scrolling library
-- **jQuery**: DOM manipulation (legacy support)
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- GSAP (GreenSock Animation Platform)
+- Lenis (Smooth Scrolling)
+- jQuery
 
 ## Project Structure
 
 ```
 honda-html-replica/
-├── index.html          # Main HTML file
-├── css/               # Stylesheets
-│   ├── 43384.css     # Main styles
-│   └── ...           # Additional CSS files
-├── js/               # JavaScript files
-│   ├── 16118.js     # Main script loader
-│   ├── 43300.js     # Core animations
-│   ├── 43416.js     # Loader animations
-│   ├── 43480.js     # Parallax effects
-│   └── ...          # Additional JS files
-├── assets/           # Media files
-│   └── *.mp4        # Video assets
-└── README.md         # This file
+├── css/           # All stylesheets
+├── js/            # All JavaScript files + GSAP plugins
+├── assets/        # All media assets
+├── index.html     # Main HTML file
+├── vercel.json    # Vercel deployment configuration
+└── package.json   # Project metadata
 ```
 
-## Notes
+## How to Run Locally
 
-- The project uses ES6 modules for script loading
-- All animations are optimized for performance
-- The loader animation includes a reverse effect for smooth transitions
-- Parallax effects are disabled on mobile devices for better performance
+1. Clone or download this repository
+2. Navigate to the project directory
+3. Start a local server:
+   ```bash
+   python -m http.server 8000
+   ```
+4. Open your browser and go to `http://localhost:8000`
+
+## How to Test
+
+1. Open the website in your browser
+2. Check the browser console for any JavaScript errors
+3. Test the loader animation (should count from 0-100)
+4. Test smooth scrolling functionality
+5. Test parallax effects by scrolling through the page
+6. Test responsive design on different screen sizes
+
+## Deployment
+
+This project is configured for easy deployment to Vercel:
+
+1. Install Vercel CLI: `npm install -g vercel`
+2. Navigate to the project directory
+3. Run: `vercel`
+4. Follow the prompts to deploy
+
+Or deploy directly from the Vercel dashboard by connecting your GitHub repository.
+
+## License
+
+MIT License - Feel free to use this project for educational purposes.
+
+## Credits
+
+- Original Honda S2000 website design
+- GSAP for animations
+- Lenis for smooth scrolling
+- All assets and content are for tribute/educational purposes only
